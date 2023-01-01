@@ -1,155 +1,121 @@
-## 프로젝트 이름
+# CaBul (사물인식 머신러닝 기반 카테고리 자동 분류 커뮤니티)
 
-### 카불  http://cabul.shop
+## 프로젝트
 
-## 프로젝트 소개
 
-### 간단한 커뮤니티 사이트입니다.
+### CaBul
 
-### 사진을 올리면 머신러닝으로 인식하고 분류한 후, 카테고리를 자동으로 분류해주는 블로그
+시연 영상 :
 
-## 팀 이름
+[https://youtu.be/Sg0NXNq49mw/](hhttps://youtu.be/Sg0NXNq49mw/)
 
-### 싸지방
+프로젝트 일정 : 2022.10.17 ~ 2022.10.21
 
-## 팀원 소개
+백엔드  Repository :[https://github.com/devjunseok/CaBul](https://github.com/devjunseok/CaBul)
 
-박준석 
+S.A 링크 : [B-1팀 사물인식 서비스](hhttps://iodized-justice-c7c.notion.site/B1-56fb2a3285fe4d8cb53e1f9f5494d948)
 
-[devjunseok - Overview](https://github.com/devjunseok)
+## 1. 프로젝트 주제
 
-노우석 
+### Pytorch, yolo를 활용하여 사용자가 업로드한 이미지를 사물인식 하여 자동으로 카테고리 생성 및 분류 하는 커뮤니티
 
-[WooSeok-Nho - Overview](https://github.com/WooSeok-Nho/)
+사물인식 서비스를 접목한 간단한 커뮤니티 사이트
 
-성창남 
+## 2. 기술 스택
 
-[SungChangNam - Overview](https://github.com/SungChangNam)
-
-양기철 
-
-[hanmariyang - Overview](https://github.com/hanmariyang)
-
-이태겸 
-
-[poro625 - Overview](https://github.com/poro625)
-
-## 개발 역할 분담
-
-- 프론트엔드 (마지막 날에 역할 분담)
-    - 최상위 템플릿 - 다 같이 마지막날에
-        -   home.html (게시글 목록, 게시글 타이틀 클릭하면 게시글 상세 페이지로 이동)
-        -   base.html (위에 navbar, 검색창, 글쓰기버튼, 홈버튼, 알림, 베이스 html)
-    - users 템플릿 - 박준석, 노우석
-        -   login.html (로그인페이지)
-        -   signup.html (회원가입페이지)
-        -   profile_edit.html (회원정보 수정 페이지)
-        -   profile_edit_password.html(비밀번호 수정 페이지)
-        -   follow.html (회원정보 읽기, 팔로우,팔로워 페이지)
-    - contents 템플릿 -양기철, 이태겸, 성창남
-        -   upload.html (게시글 업로드)
-        -   index.html (게시글 상세 페이지, 게시글 읽기, 댓글 달기)
-        -   update.html (게시글 수정 페이지)
-        -   search.html (검색페이지)
 - 백엔드
-    - 로그인 기능(users) - 박준석, 노우석
-        -   회원가입, 회원탈퇴 (email, 이름, 닉네임, 비밀번호)
-        -   로그인, 카카오 API 로그인하기
-        -   로그아웃
-        -   팔로우, 팔로워
-        -   내 프로필 편집(비밀번호 변경, 이메일 변경)
-        -   회원탈퇴
-        -   이메일 인증
-    - 게시글 기능(contents) - 성창남, 이태겸, 양기철
-        -   글삭제(본인의 글만)
-        -   게시글올리기(사진포함) + 게시글 수정(본인의 글만)
-        -   댓글
-        -   좋아요
-        -   검색
-        -   태그
-    - 머신러닝(yolo모델, 파이토치 사용) (다 같이 머리를 맞대고)
-        -   머신러닝(사물인식)
-        -   태그
-        - 머신러닝 - Django 연동
-        
-    
-    백엔드 기능 먼저 구현 후, 마지막에 부트스트랩을 이용해서 프론트 구현
-    
-    1차 목표는 Django를 이용한 완벽한 웹 서비스 구현.
-    
-    2차 목표는 머신러닝 연동
-    
-- 자동 카테고리 분류
-    
-    person(사람) - 사람
-    
-    car(자동차) - 자동차
-    
-    cat, dog - 동물
-    
-    pizza, cake - 음식
-    
-    sports ball - 스포츠
-    
-    .... 이런 식으로 계속 추가 가능
-    
-- 추가로 시도해 볼 기능들
-    -   다른 유저 프로필 볼 수 있게
-    -   대댓글
-    -   paginator 이용해서 한 페이지 최대 게시글 수 제한하기.
+    - Python 3.10
+    - Django 4.1.3
+    - Pytorch 1.13.0
 
-## 사용하는 기술
+## 3. 싸지방 팀 팀원 및 역할
 
-- python (3.10.7)
-- Django (4.1.2)
-- html
-- css
-- sqlite
-- git
+### 박준석 - [devjunseok - Overview](https://github.com/devjunseok)
 
-## 와이어프레임
+팀장 / 프로젝트 기획 / 사이트 배포 / user 기능/ DB 모델링 / 머신러닝 코드 작성
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/3b54f3c3-5b25-4cdb-8a06-ab595096963a/Untitled.png)
+### 노우석 - [WooSeok-Nho - Overview](https://github.com/WooSeok-Nho/)
 
-[https://www.figma.com/file/MFJqOD0rR4XhZFmudkHHLz/Untitled?node-id=0%3A1](https://www.figma.com/file/MFJqOD0rR4XhZFmudkHHLz/Untitled?node-id=0%3A1)
+팀원 / 프로젝트 기획 / user기능 / 날씨추천기능 / 포인트적립기능 / FrontEnd 제작,API연결
 
-## Model 설계
+### 성창남 - [SungChangNam - Overview](https://github.com/SungChangNam)
 
-Users - 회원가입 로그인 로그아웃 팔로우 팔로워, 알림 (박준석 노우석)
+팀원 / 프로젝트 기획 / communities 기능/ DB 모델링 / FrontEnd 제작,API연결
 
-1. 유저 정보(user) (AbstractUser)
-- email.EmailField
-- username.CharField
-- profile_image.ImageField
-- nickname.CharField
-- follow.ManyToManyField
+### 양기철 - [hanmariyang - Overview](https://github.com/hanmariyang)
 
-contents - 게시글 올리기, 삭제, 수정, 댓글, 대댓글, 좋아요 , 검색, 알림 (성창, 이태겸, 양기철님)
+팀원 / 프로젝트 기획 / products, recommend 기능 / 상품정보 크롤링 / DB모델링 / 추천 서비스 기능 / FrontEnd 템플릿 제작 및 API연결
 
-1. 게시글(Feed)
-- user.Foreignkey(user)
-- content.TextField
-- title.CharField
-- tags.TaggableManager
-- created_at.DateTimeField
-- updated_at.DateTimeField
-- image.ImageField
-- like.ManyToManyField
-- category.CharField
-1. 댓글 (Comment)
-- feed.Foreignkey(Feed)
-- User.Foreignkey(user)
-- comment.TextField
-- created_at.DateTimeField
-- updated_at.DateTimeField
-- like.ManyToManyField
-1. 태그 (TaggedFeed) (TaggedItemBase)
-- content_object.ForeignKey(Feed)
+### 이태겸 - [poro625 - Overview](https://github.com/poro625)
 
-## DB erd
+팀원 / 프로젝트 기획 / communites 기능, products 기능, weather 기능/크롤링/ DB 모델링 /태그 기능/ 검색 기능/상세보기 수정 및 삭제
 
-![제목 없는 다이어그램.drawio.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/ab1c96a0-7c9c-4e87-a80c-85fcdc5a909d/%EC%A0%9C%EB%AA%A9_%EC%97%86%EB%8A%94_%EB%8B%A4%EC%9D%B4%EC%96%B4%EA%B7%B8%EB%9E%A8.drawio.png)
+## 4. 프로젝트 기능
 
-## API 구현
+### User 기능(회원가입/로그인 - simple jwt 사용)
+- 회원가입 시, 비밀번호 유효성 검사 기눙
+- 회원정보 CRUD 기능
+- 소셜로그인 기능(카카오톡)
+- 팔로우, 팔로워
 
-[프로젝트 API 설계하기](https://www.notion.so/f9757207d1634617ab738e60bc461449)
+### contents 기능 (게시글, 댓글, 사물인식)
+
+- 게시글 CRUD
+- 댓글 CRUD
+- 게시글 검색
+- Pytorch, yolo 사용 업로드한 이미지 사물인식
+ 
+## 4-1. 트러블 슈팅
+
+### 박준석
+
+**문제 : 아이템 기반 협업 필터링으로 추천받은 영화를 DB에 접근해서 가져오지 못하는 상황 발생**
+
+**원인 : 협업 필터링은 단순히 csv파일을 기준으로 영화를 추천해주기 때문에 db에 있는 영화와 연동을 하지 못하는 것이 원인**
+
+**해결 : 리스트 축약식을 사용하여 추천된 영화를 장고 ORM에 적용하여 db에서 추출하여 해결 (recommend/views.py/TasteView)** 
+
+
+### 양기철
+
+**문제 : Serializer를 사용하지않고 ManyToMany 필드를 사용하는 대량 DB 저장시 각 필드끼리 연결되지 않는 문제 발생**
+
+**원인 : 크롤링한 외부 데이터를 가져와서 DB에 저장시키려다보니 각각 알맞는 필드를 연결시키지 못함**
+
+**해결 : ManyToMany 필드에 맞는 로직으로 저장하여 해결**
+### 노우석
+
+**문제 : 출석버튼을 눌렀을 때 db에 저장되어 있는 point가 증가하게 설계해놓았다.**
+
+**다만 코드 로직 자체를 하루에 한번 포인트가 증가하게 할 수 있게 datetime.today()와 버튼을 클릭했을 때의 현재 날짜를 저장하는 click_time의 값을 비교해서 값이 같으면 기능이 작동하지 않게 작성해놓았는데 제대로 작동하지 않는 상황 발생**
+
+**해결 : 두개의 값이 완전히 같게 보여도 타입이 달랐기 때문에 타입을 모델에서 변경해주어 같게 만들어주었더니 해결.**
+
+### 이태겸
+
+**문제 : 태그 기능을 게시글에 작성 시 여러개를 저장하더라도 각각 DB에 저장이 되도록 해야 하는데 각각 저장이 되지 않는 상황 발생**
+
+**원인 : 원인은 Serializer 사용 시 ManyToMany 관계를 의식하지 않고 태그 기능을 구현하였기 때문에 생긴 현상.**
+
+**해결 :ManyToMany 관계 Serializer를 사용하여 기존 Serializer를 수정 보완하여서 해결**
+
+### 성창남
+
+**문제 : 연동 하여 관리자가 신고 게시글 삭제 기능 구현 할 때 백엔드 정보가 프로트엔드에 구현되지 않은 오류가 발생 하는 문제가 발생. 처음에는 await fetch 만 사용 하여 원치않는 정보도 같이 들어와서 오류 발생.**
+
+**해결 : 이중 반복문 을 활용하여 해결.**
+
+
+## 5. 와이어프레임
+
+[https://www.figma.com/file/hgtTToRaWbfP87GfNvHaMa/Off_the_Outfit?node-id=0%3A1&t=xw7FNe87Jr8IecaC-1](https://www.figma.com/file/hgtTToRaWbfP87GfNvHaMa/Off_the_Outfit?node-id=0%3A1&t=xw7FNe87Jr8IecaC-1)
+
+![https://user-images.githubusercontent.com/111295065/207312359-91bb78a9-c108-4897-8cc3-e0cbb1f00cd0.png](https://user-images.githubusercontent.com/111295065/207312359-91bb78a9-c108-4897-8cc3-e0cbb1f00cd0.png)
+
+## 6. API 명세서
+
+[off_the_outfit (getpostman.com)](https://documenter.getpostman.com/view/24913558/2s8YzWRfo4)
+
+## 7. DB 설계 ERD
+
+![https://user-images.githubusercontent.com/111295065/207309475-759e6e8d-8265-4c49-8c8f-9f83478c329d.png](https://user-images.githubusercontent.com/111295065/207309475-759e6e8d-8265-4c49-8c8f-9f83478c329d.png)
